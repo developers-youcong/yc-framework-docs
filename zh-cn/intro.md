@@ -33,8 +33,8 @@ yc-framework致力于打造一款优秀的分布式微服务解决方案，适�
 
 ## 五、获取帮助
 Git地址:
-https://github.com/DevTech-Challenger/yc-framework
+https://github.com/developers-youcong/-yc-framework
 
-如需寻求帮助、项目建议、技术讨论等，请移步到GitHub提相关issues，我会在非工作时间进行解答或回复。
+如需寻求帮助、项目建议、技术讨论等，请移步到GitHub提相关[issues](https://github.com/developers-youcong/-yc-framework/issues)，我会在非工作时间进行解答或回复。
 
 如需关注项目最新动态，请Watch、Star项目，同时也是对项目最好的支持。
