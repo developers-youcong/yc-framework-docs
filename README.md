@@ -103,6 +103,9 @@
 
 其中涉及数据爬虫相关，必须确保yc-crawler、yc-plugins、yc-job等运行起来才行。
 
+**注意**:通过爬虫获取的数据只能用于个人学习研究，不能用于任何的商业用途，违反者，后果自负。
+
 ## 八、官方文档
-文档地址:http://ycframework.net/
+文档地址:
+http://framework.youcongtech.com/
 
