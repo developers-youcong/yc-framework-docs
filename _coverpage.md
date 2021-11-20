@@ -9,5 +9,5 @@
 - 集成方案更优；
 - 高可用、高性能、高并发是标准。
 
-[GitHub](https://github.com/DevTech-Challenger/yc-framework)
+[GitHub](https://github.com/developers-youcong/yc-framework)
 [Get Started](#yc-framework)

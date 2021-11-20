@@ -6,11 +6,11 @@
 
 * 快速开始
   * [本地开发环境准备](zh-cn/dev_env.md)
-  * [Nacos安装和配置](zh-cn/no.md)
-  * [项目启动](zh-cn/no.md)
+  * [Nacos安装和配置](zh-cn/nacos.md)
+  * [项目启动](zh-cn/run.md)
 
 * 组件使用
-  * [分页](zh-cn/no.md)
+  * [分页](zh-cn/page.md)
   * [Excel数据导入/导出](zh-cn/no.md)
   * [Word模板引擎](zh-cn/no.md)
   * [跨域配置](zh-cn/no.md)
