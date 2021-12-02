@@ -1,6 +1,7 @@
 # 第三方工具类之Hutool
 
 ## 一、导入依赖
+想使用Hutool相关的工具类，只需引入该依赖即可:
 ```
 <dependency>
     <groupId>com.yc.framework</groupId>
@@ -8,6 +9,7 @@
 </dependency>
 
 ```
+
 
 ## 二、关于如何使用
 阅读官方文档地址(文档有详细介绍和案例):

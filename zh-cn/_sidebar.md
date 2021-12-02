@@ -16,7 +16,7 @@
   * [跨域配置](zh-cn/cors.md)
   * [接口文档自动化](zh-cn/knife4j.md)
   * [Redis使用](zh-cn/redis.md)
-  * [接口鉴权](zh-cn/knife4j.md)
+  * [接口鉴权](zh-cn/security.md)
   * [邮件](zh-cn/email.md)
   * [爬虫](zh-cn/crawler.md)
   * [线程池](zh-cn/thread.md)
