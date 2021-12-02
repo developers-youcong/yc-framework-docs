@@ -11,8 +11,8 @@
 
 * 组件使用
   * [分页](zh-cn/page.md)
-  * [Excel数据导入/导出](zh-cn/no.md)
-  * [Word模板引擎](zh-cn/no.md)
+  * [Excel数据导入/导出](zh-cn/excel.md)
+  * [Word模板引擎](zh-cn/word.md)
   * [跨域配置](zh-cn/cors.md)
   * [接口文档自动化](zh-cn/knife4j.md)
   * [Redis使用](zh-cn/redis.md)
@@ -23,7 +23,7 @@
   * [多数据源](zh-cn/multi_datasource.md)
   * [文件转换(word转pdf)](zh-cn/wordToPdf.md)
   * [定时任务](zh-cn/quartz.md)
-  * [链路追踪](zh-cn/link_trace.md)
+  * [链路追踪](zh-cn/link_track.md)
   * [Druid连接池](zh-cn/druid.md)
   * [Sentinel限流熔断](zh-cn/sentinel.md)
   * [分库分表之MyCat](zh-cn/no.md)
