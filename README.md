@@ -42,8 +42,11 @@
 ├── yc-common          // 通用模块
 │       └── yc-common-core                     // 核心模块
 │       └── yc-common-knife4j                 // 接口文档自动生成模块
-│       └── yc-common-redis                   // 缓存模块
+│       └── yc-common-redis                   // Redis模块
 │       └── yc-common-security                // 安全模块
+│       └── yc-common-elasticsearch           // ElasticSearch模块
+│       └── yc-common-mongodb                 // MongoDB模块
+│       └── yc-common-rabbitmq                // RabbitMQ模块
 │                         
 ├── yc-modules         // 微服务模块
 │       └── yc-admin                              // 统一用户微服务 [9000]
@@ -56,7 +59,7 @@
 ````
 
 ## 五、功能
-当前版本为1.0，所具有的功能如下:
+当前版本所具有的功能如下:
 
 - 用户登录/注册、退出；
 - 统一微服务接口鉴权；
@@ -71,7 +74,11 @@
 - Redis操作；
 - Sentinel限流熔断；
 - 分布式Token；
-- 默认集成博客园、聚合等API。
+- 默认集成博客园、聚合等API；
+- 集成ElasticSearch；
+- 集成RabbitMQ;
+- 集成MongoDB。
+
 
 
 ## 六、环境
@@ -81,12 +88,18 @@
 - DB: MySQL5.7.x或MySQL8.x版本均支持；
 - JDK: JDK 1.8；
 - Maven: Maven 3.0版本以上均支持；
-- Redis: 5.x版本以上均支持。
+- Redis: 5.x版本以上均支持；
+- MongoDB:4.x版本以上均支持；
+- ElasticSearch:7.x版本以上均支持；
+- RabbitMQ:3.x版本以上均支持。
 
 ### 2.服务器部署环境
 - DB:MySQL5.7.x或MySQL8.x版本均支持；
 - JRE:JRE1.8；
 - Redix:5.x版本以上均支持；
+- MongoDB:4.x版本以上均支持；
+- ElasticSearch:7.x版本以上均支持；
+- RabbitMQ:3.x版本以上均支持；
 - 操作系统:Windows Server和Ubuntu、CenOS等均支持。
 
 
@@ -103,9 +116,9 @@
 
 其中涉及数据爬虫相关，必须确保yc-crawler、yc-plugins、yc-job等运行起来才行。
 
-**注意**:通过爬虫获取的数据只能用于个人学习研究，不能用于任何的商业用途，违反者，后果自负。
+**注意**:
+通过爬虫获取的数据只能用于个人学习研究，不能用于任何的商业用途，违反者，后果自负。
 
 ## 八、官方文档
 文档地址:
 http://framework.youcongtech.com/
-
