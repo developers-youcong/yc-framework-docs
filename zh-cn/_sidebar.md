@@ -15,6 +15,7 @@
   * [Word模板引擎](zh-cn/word.md)
   * [跨域配置](zh-cn/cors.md)
   * [接口文档自动化](zh-cn/knife4j.md)
+  * [日志统一模块化](zh-cn/log.md)
   * [Redis使用](zh-cn/redis.md)
   * [接口鉴权](zh-cn/security.md)
   * [邮件](zh-cn/email.md)
@@ -39,10 +40,10 @@
   * [分布式事务之Tx-LCN](zh-cn/tx_lcn.md)
   * [分布式定时任务之Xxl-Job](zh-cn/xxl_job.md)
   * [分布式定时任务之ElasticJob](zh-cn/elastic_job.md)
-  * [微信公众号](zh-cn/no.md)
+  * [微服务监控](zh-cn/monitor_server.md)
+  * [微信公众号](zh-cn/wechat_api.md)
   * [Hadoop](zh-cn/no.md)
   * [第三方支付](zh-cn/no.md)
-
 
 
 * 测试
