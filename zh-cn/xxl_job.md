@@ -7,3 +7,28 @@ https://www.xuxueli.com/xxl-job/
 
 Xxl-Job源代码:
 https://github.com/xuxueli/xxl-job
+
+## 一、导入依赖
+```
+<dependency>
+    <groupId>com.yc.framework</groupId>
+    <artifactId>yc-common-xxljob</artifactId>
+</dependency>
+
+```
+
+## 二、配置
+```
+#xxl-job
+xxl:
+  job:
+    admin:
+      addresses:http://127.0.0.1:8080/xxl-job-admin
+    executor:
+      appname: Application1-Job
+      ip:
+      port: 9920
+      logpath: /data/xxl-job/jobhandle_log
+      logretentiondays: -1
+    accessToken:
+```

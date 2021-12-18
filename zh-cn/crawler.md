@@ -2,25 +2,11 @@
 
 ### 一、引入Maven依赖
 ```
-   <!-- webmagic-->
-        <dependency>
-            <groupId>us.codecraft</groupId>
-            <artifactId>webmagic-core</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>us.codecraft</groupId>
-            <artifactId>webmagic-extension</artifactId>
-        </dependency>
+<dependency>
+    <groupId>com.yc.framework</groupId>
+    <artifactId>yc-common-crawler</artifactId>
+</dependency>
+
 
 ```
 主要采用的是webmagic爬虫框架，如果你需要在你的项目中大量使用，建议你阅读官方文档，进行全面的了解。
