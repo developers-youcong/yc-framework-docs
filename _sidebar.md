@@ -6,6 +6,7 @@
 
 * 快速开始
   * [本地开发环境准备](zh-cn/dev_env.md)
+  * [数据初始化](zh-cn/init.md)
   * [Nacos安装和配置](zh-cn/nacos.md)
   * [项目启动](zh-cn/run.md)
 
