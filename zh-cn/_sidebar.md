@@ -34,7 +34,7 @@
   * [消息队列之RocketMQ](zh-cn/rocketmq.md)
   * [ElasticSearch集成](zh-cn/es.md)
   * [MongoDB集成](zh-cn/mongodb.md)
-  * [日志框架之Lombok](zh-cn/lombok.md)
+  * [日志框架之Logback](zh-cn/logback.md)
   * [第三方工具类之Hutool](zh-cn/hutool.md)
   * [分布式事务之Seata](zh-cn/seata.md)
   * [分布式事务之Tx-LCN](zh-cn/tx_lcn.md)
