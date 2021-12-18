@@ -11,6 +11,8 @@ cd yc-framework/doc/sql
 ```
 source yc-framework.sql;
 source nacos.sql;
+source tx-lcn.sql;
+source xxl_job.sql;
 source init.sql;
 ```
 
