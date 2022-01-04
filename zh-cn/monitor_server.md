@@ -8,13 +8,8 @@
 对应的客户端需要引入如下依赖:
 ```
 <dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-actuator</artifactId>
-</dependency>
-
-<dependency>
-    <groupId>de.codecentric</groupId>
-    <artifactId>spring-boot-admin-starter-client</artifactId>
+    <groupId>com.yc.framework</groupId>
+    <artifactId>yc-common-monitor</artifactId>
 </dependency>
 
 ```

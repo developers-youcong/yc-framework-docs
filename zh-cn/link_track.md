@@ -8,13 +8,8 @@
 ## 一、导入依赖
 ```
 <dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-sleuth</artifactId>
-</dependency>
-
-<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+    <groupId>com.yc.framework</groupId>
+    <artifactId>yc-common-linktrack</artifactId>
 </dependency>
 
 ```
