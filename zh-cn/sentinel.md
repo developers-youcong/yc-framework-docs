@@ -14,3 +14,11 @@ java -jar sentinel-dashboard.jar
 
 默认用户名和密码如下:
 sentinel/sentinel_gateway
+
+针对微服务应用中需要Sentinel的，引入对应依赖即可:
+```
+<dependency>
+    <groupId>com.yc.framework</groupId>
+    <artifactId>yc-common-sentinel</artifactId>
+</dependency>
+```

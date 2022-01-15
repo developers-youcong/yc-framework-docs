@@ -51,16 +51,18 @@
   * [Netty](zh-cn/netty.md)
   * [云存储](zh-cn/cs.md)
   * [分布式日志之ELK](zh-cn/elk.md)
-  * [单元测试](zh-cn/test.md)
-
+  * [Nacos使用](zh-cn/nacos_app.md)
+  * [Dubbo使用](zh-cn/dubbo.md)
+  * [gRPC使用](zh-cn/grpc.md)
+  * [Eureka使用](zh-cn/eureka.md)
+  * [Shardingjdbc使用](zh-cn/shardingjdbc.md)
+  * [ShedLock使用](zh-cn/shedlock.md)
 
 * 测试
   * [自动化接口测试](zh-cn/no.md)
   * [性能测试](zh-cn/no.md)
   * [安全测试](zh-cn/no.md)
 
-
 * 部署
   * [jar包部署](zh-cn/no.md)
   * [docker部署](zh-cn/no.md)
-
