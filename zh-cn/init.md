@@ -21,43 +21,46 @@ source init.sql;
 
 ### 1.yc-gateway-dev.yml
 ```
-spring: 
-   redis:
-    host: 127.0.0.1
-    port: 6379
-    password: 
-    lettuce:
-      pool:
-        max-active: 1500
-        max-wait: 5000
-        max-idle: 500
-        min-idle: 100
-        shutdown-timeout: 1000
-files:
-  access_url: http://file.youcongtech.com
-#请求处理的超时时间
-ribbon:
-  ReadTimeout: 10000
-  ConnectTimeout: 10000
-
-# feign 配置
-feign:
-  sentinel:
-    enabled: true
-  okhttp:
-    enabled: true
-  httpclient:
-    enabled: false
-  client:
-    config:
-      default:
-        connectTimeout: 100000
-        readTimeout: 100000
-  compression:
-    request:
-      enabled: false
-    response:
-      enabled: false
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
+      routes:
+        ## auth
+        - id: yc-auth
+          uri: lb://yc-auth
+          predicates:
+            - Path=/cert/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
+        ## admin
+        - id: yc-admin
+          uri: lb://yc-admin
+          predicates:
+            - Path=/admin/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
+        ## cms
+        - id: yc-cms
+          uri: lb://yc-cms
+          predicates:
+            - Path=/cms/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
+        ## file
+        - id: yc-file
+          uri: lb://yc-file
+          predicates:
+            - Path=/file/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
 # 打开客户端的监控
 management:
   endpoints:
@@ -65,6 +68,7 @@ management:
     web:
       exposure:
         include: '*'
+
 
 ```
 
@@ -274,22 +278,10 @@ joke_appkey=xxxx
 
 ### 10.yc-wechat-dev.yml
 ```
-spring:
-  activemq:
-    broker-url: tcp://${ACTIVEMQ_HOST:localhost}:${ACTIVEMQ:61616} # activemq连接地址
-    user: ${ACTIVEMQ_USER:admin} # 用户名
-    password: ${ACTIVEMQ_PASSWORD:admin} # 密码
-    send-timeout: # 发送超时时间
-    pool:
-      enabled: false # 是否创建 JmsPoolConnectionFactory 连接池
-      idle-timeout: 30s # 空闲连接超时时间
-      max-connections: 50 # 连接池中最大连接数
-      max-sessions-per-connection: 100 # 每个连接最大会话
 wx_public:
  app_id: xxxx
  app_secret: xxxx
  token: xxxx
  aes_key: xxxx
-
 
 ```

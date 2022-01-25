@@ -11,4 +11,5 @@
 
 
 [GitHub](https://github.com/developers-youcong/yc-framework)
+[Gitte](https://gitee.com/developers-youcong/yc-framework)
 [Get Started](#yc-framework)
