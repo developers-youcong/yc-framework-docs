@@ -90,3 +90,6 @@ public interface PostRepository extends ElasticsearchRepository<PostEntity, Stri
 #### (3)Service及其ServiceImpl
 
 关于Service及其ServiceImpl与平常Java通用型写法基本上一样，这里不再赘述。
+
+源代码示例:
+https://github.com/developers-youcong/yc-framework/tree/main/yc-example/yc-example-es

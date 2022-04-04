@@ -62,3 +62,6 @@ ServiceImpl编写:
 
 关于MyBatis-Plus分页的更多信息，访问如下地址:
 https://baomidou.com/guide/page.html
+
+源代码示例:
+https://github.com/developers-youcong/yc-framework/tree/main/yc-example/yc-example-page

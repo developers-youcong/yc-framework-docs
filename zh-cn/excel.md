@@ -38,3 +38,6 @@ public class PostExcelExportVo implements Serializable {
     ExcelUtil<PostExcelExportVo> util = new ExcelUtil<PostExcelExportVo>(PostExcelExportVo.class);
     util.exportExcel(response, list, "文章");
 ```
+
+源代码示例:
+https://github.com/developers-youcong/yc-framework/tree/main/yc-example/yc-example-poi

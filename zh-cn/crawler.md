@@ -19,8 +19,6 @@ https://git.oschina.net/flashsword20/webmagic
 
 
 ## 二、代码示例
-相关代码均可在该地址找到:
-https://github.com/developers-youcong/yc-framework/tree/main/yc-modules/yc-crawler
 
 ### 1.抓取博客园文章数据
 ```
@@ -130,3 +128,6 @@ public class CSDNDataCrawler implements PageProcessor {
 }
 
 ```
+
+源代码示例:
+https://github.com/developers-youcong/yc-framework/tree/main/yc-example/yc-example-crawler
