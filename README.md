@@ -38,7 +38,7 @@
 - 分库分表中间件：ShardingJdbc、MyCat；
 - 爬虫框架：JSOUP/WebMagic；
 - 日志框架：Lombok；
-- Excel处理:Apache Poi；
+- Excel处理:Apache Poi、EasyPoi；
 - 分布式定时任务：Quartz、Xxl-Job、Elastic-Job、ShedLock；
 - 服务链路追踪：SpringCloud Sleuth+Zipkin；
 - Word模板引擎：Poi-tl；
@@ -54,7 +54,9 @@
 - 分布式处理引擎:Apache Flink；
 - 文件存储:私有云或公有云均支持；
 - 单元测试框架:Junit；
-- 分布式事务:Seata、Tx-LCN。
+- 分布式事务:Seata、Tx-LCN；
+- 规则引擎:Drools、LiteFlow；
+- 通信框架:Netty、Smart Socket。
 
 ## 六、系统模块
 ````   
@@ -94,9 +96,16 @@
 │       └── yc-common-cxf                      //  webservice模块
 │       └── yc-common-sentinel                 //  sentinel模块
 │       └── yc-common-shardingjdbc             //  shardingjdbc模块
-│       └── yc-common-dubbo             //  dubbo模块
+│       └── yc-common-dubbo                    //  dubbo模块
 │       └── yc-common-grpc                     //  grpc模块
+│       └── yc-common-liteflow                 //  liteflow模块
 │       └── yc-common-shedlock                 //  shedlock模块
+│       └── yc-common-easypoi                 //  easypoi模块
+│       └── yc-common-smart-socket             //  smart-socket模块
+│       └── yc-common-elasticjob                 //  elasticjob模块
+│       └── yc-common-drools                 //  drools模块
+
+
 │                         
 ├── yc-modules           // 微服务模块
 │       └── yc-admin                              // 统一用户微服务 [9000]
@@ -107,6 +116,9 @@
 │       └── yc-plugins                            // 插件微服务 [9005]
 │       └── yc-wechat                             // 微信生态微服务 [9006]
 │       └── yc-monitor-server                     // 监控微服务 [9100]
+│       └── yc-code-generator                     // 代码生成器工具
+│       └── yc-xjar                               // jar包加密工具
+
 ├──pom.xml                
 ````
 
@@ -115,11 +127,9 @@
 
 - 用户登录/注册、登录状态、用户信息、退出；
 - 微服务接口鉴权模块化；
-- 数据爬虫(爬取真气网、博客园、思否、CSDN等网站数据)；
+- 数据爬虫(博客园、思否、CSDN等网站数据)；
 - 用户管理；
-- 文章管理；
-- 分类管理；
-- 标签管理；
+- CMS基础功能(文章管理、分类管理、标签管理等；
 - 文件管理；
 - 接口文档模块化；
 - Sentinel限流熔断；
@@ -140,7 +150,7 @@
 - 消息队列RocketMQ模块化；
 - 分布式定时任务Xxl-Job模块化；
 - 微信生态方案模块化；
-- 集成分布式定时任务Elastic-Job；
+- 分布式定时任务Elastic-Job模块化；
 - Quartz定时任务模块化；
 - 爬虫模块化；
 - 分布式链路追踪模块化;
@@ -155,25 +165,30 @@
 - 对象云存储模块化；
 - Nacos模块化；
 - Eureka模块化；
-- 支持SOA；
-- Sentinel模块化；
-- Shardingjdbc模块化；
-- Dubbo模块化；
-- gRPC模块化；
-- Shedlock模块化。
-
-### 本次版本V1.0.5更新
-- 所有模块依赖调整；
-- 部分问题修复；
-- Nacos模块化；
-- Eureka模块化；
-- 支持SOA(即WebService)；
+- Apache CXF模块化；
 - Sentinel模块化；
 - Shardingjdbc模块化；
 - Dubbo模块化；
 - gRPC模块化；
 - Shedlock模块化；
-- 文档更新V1.0.5。
+- Drools模块化
+- LiteFlow模块化；
+- EasyPoi模块化； 
+- Smart-Socket模块化；
+- 代码生成器；
+- Jar包加密；
+- 例子覆盖60%(yc-example)。
+
+
+## 本次版本V1.0.6更新
+- 1.系统例子覆盖80%(各大分布式体系中的主流技术栈均有体现)；
+- 2.清理部分代码；
+- 3.支持Drools、EasyPoi、LiteFlow、Smart-Socket等；
+- 4.官方文档更新V1.0.6；
+- 5.增加jar包源代码加密功能；
+- 6.yc-common-core核心包调整；
+- 7.新增代码生成器(基于MyBatis-Plus3.x)；
+- 8.部分问题处理。
 
 ## 八、环境
 
@@ -240,9 +255,12 @@
 文档地址:
 http://framework.youcongtech.com/
 
-官方博客:
+开源作者博客:
 https://youcongtech.com/
+
+开源作者博客关于YC-Framework相关:
+https://youcongtech.com/tags/YC-Framework/
 
 官方微信公众号:
 
-![微信公众号](./_media/wechat.jpg)
+![微信公众号](http://framework.youcongtech.com/_media/wechat.jpg)
