@@ -532,7 +532,7 @@ https://youcongtech.com/tags/YC-Framework/
 
 
 
-![微信公众号](http://youcongtech.com/yc-framework-docs/_media/wechat.jpg)
+![微信公众号](./_media/wechat.jpg)
 
 
 
